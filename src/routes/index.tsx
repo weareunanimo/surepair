@@ -32,6 +32,7 @@ function Index() {
         <Pricing />
         <Faq />
         <Cta />
+        <MatchSimulator />
       </main>
       <Footer />
     </div>
