@@ -1,4 +1,5 @@
 import { Sparkles } from "lucide-react";
+import { Link } from "@tanstack/react-router";
 
 export function Footer() {
   return (
@@ -8,10 +9,16 @@ export function Footer() {
           <Sparkles className="h-5 w-5 text-emerald-400" />
           <span className="tracking-tight">Surepair</span>
         </div>
-        <p className="text-xs text-slate-500 font-light">
-          © {new Date().getFullYear()} Surepair. IA sob medida para pequenos negócios.
-        </p>
+        <div className="flex items-center gap-6 text-xs text-slate-500 font-light">
+          <Link to="/blueprint" className="hover:text-slate-200 transition">
+            Blueprint editorial
+          </Link>
+          <span>
+            © {new Date().getFullYear()} Surepair. IA sob medida para pequenos negócios.
+          </span>
+        </div>
       </div>
     </footer>
   );
 }
+
