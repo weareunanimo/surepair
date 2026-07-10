@@ -79,7 +79,8 @@ function ServiceNotFound() {
 }
 
 function ServiceDetail() {
-  const { solution } = Route.useLoaderData();
+  const { slug } = Route.useParams();
+  const solution = solutions.find((s) => s.slug === slug)!;
   const related = solutions.filter((s) => s.slug !== solution.slug).slice(0, 3);
   const highlightedBenefits = benefits.slice(0, 4);
   const relatedFaq = faq.slice(0, 4);
