@@ -10,6 +10,7 @@ import { Testimonials } from "@/components/landing/Testimonials";
 import { Pricing } from "@/components/landing/Pricing";
 import { Faq } from "@/components/landing/Faq";
 import { Cta } from "@/components/landing/Cta";
+import { MatchSimulator } from "@/components/landing/MatchSimulator";
 import { Footer } from "@/components/landing/Footer";
 
 export const Route = createFileRoute("/")({
