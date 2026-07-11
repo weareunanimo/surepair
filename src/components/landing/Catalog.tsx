@@ -26,7 +26,7 @@ export function Catalog() {
 
         <div className="mt-16 grid md:grid-cols-2 gap-6">
           {solutions.map((s, i) => (
-            <Reveal key={s.slug} delay={i * 0.06}>
+            <Reveal key={s.slug} delay={i * 0.06} className="h-full">
               <Link
                 to="/servicos/$slug"
                 params={{ slug: s.slug }}
