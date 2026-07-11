@@ -338,10 +338,10 @@ function ServiceDetail() {
                 Garantias que você assina antes de pagar.
               </h2>
             </Reveal>
-            <div className="mt-12 grid md:grid-cols-2 gap-3">
+            <div className="mt-12 grid md:grid-cols-2 gap-3 items-stretch">
               {highlightedBenefits.map((b, i) => (
-                <Reveal key={b.slug} delay={i * 0.04}>
-                  <div className="rounded-xl bg-slate-900/40 ring-1 ring-white/8 p-5">
+                <Reveal key={b.slug} delay={i * 0.04} className="h-full">
+                  <div className="rounded-xl bg-slate-900/40 ring-1 ring-white/8 p-5 h-full flex flex-col">
                     <div className="flex items-center gap-3">
                       <b.icon className="h-5 w-5 text-emerald-400" />
                       <div className="text-slate-100">{b.title}</div>
@@ -349,7 +349,7 @@ function ServiceDetail() {
                     <p className="mt-2 text-sm text-slate-400 font-light leading-relaxed">
                       {b.description}
                     </p>
-                    <p className="mt-2 text-[12px] text-emerald-300/90 font-light">
+                    <p className="mt-auto pt-2 text-[12px] text-emerald-300/90 font-light">
                       → {b.guarantee}
                     </p>
                   </div>
