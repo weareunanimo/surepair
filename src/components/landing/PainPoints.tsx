@@ -11,9 +11,7 @@ export function PainPoints() {
               O problema
             </p>
             <h2 className="text-4xl md:text-5xl">
-              Contratar IA no freelance é caro,
-              <br />
-              lento e cheio de risco.
+              Contratar IA no freelance é caro, lento e cheio de risco.
             </h2>
             <p className="mt-6 text-slate-400 font-light">
               Todo dono de PME que tentou automação com dev genérico já viveu ao
