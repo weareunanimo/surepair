@@ -16,18 +16,18 @@ export function BentoGrid() {
             </h2>
           </div>
         </Reveal>
-        <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 auto-rows-fr">
           {benefits.map((b, i) => (
-            <Reveal key={b.slug} delay={i * 0.05} className={b.span}>
-              <article className="rounded-2xl border border-white/8 bg-slate-900/40 p-8 h-full">
-                <div className="flex flex-col sm:flex-row sm:items-center gap-3 flex-wrap">
-                  <b.icon className="h-6 w-6 text-emerald-400" />
+            <Reveal key={b.slug} delay={i * 0.05} className="h-full">
+              <article className="flex flex-col h-full rounded-2xl border border-white/8 bg-slate-900/40 p-8 hover:border-emerald-400/30 transition-colors">
+                <div className="flex items-center gap-3">
+                  <b.icon className="h-6 w-6 text-emerald-400 shrink-0" />
                   <h3 className="text-lg">{b.title}</h3>
                 </div>
                 <p className="mt-4 text-slate-300 text-sm font-light leading-relaxed">
                   {b.description}
                 </p>
-                <p className="mt-4 pt-4 border-t border-white/5 text-[12px] text-emerald-300/90 font-light leading-relaxed">
+                <p className="mt-auto pt-4 border-t border-white/5 text-[12px] text-emerald-300/90 font-light leading-relaxed">
                   → {b.guarantee}
                 </p>
               </article>
