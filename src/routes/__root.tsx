@@ -88,10 +88,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         property: "og:description",
         content:
-          "Programadores de IA certificados para demandas pré-definidas. Preço fixo, entrega garantida.",
+          "Conecte seu negócio a programadores de IA certificados para demandas pré-definidas. Escopo claro, preço fixo, entrega garantida — sem freelancers genéricos.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Surepair — IA sob medida para pequenos negócios" },
+      { name: "twitter:description", content: "Conecte seu negócio a programadores de IA certificados para demandas pré-definidas. Escopo claro, preço fixo, entrega garantida — sem freelancers genéricos." },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/df73b99a-598f-41f6-8267-89609becaf57" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/df73b99a-598f-41f6-8267-89609becaf57" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
